@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/item_setting_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center_vertical" >
+		<ImageView 
+		    android:id="@+id/item_setting_icon"
+		    android:layout_width="50dp"
+        	android:layout_height="50dp"
+        	android:src="@mipmap/setting_print"/>
+		<RelativeLayout 
+		    android:layout_width="wrap_content"
+        	android:layout_height="wrap_content">
+		    <TextView android:id="@+id/item_setting_print_name"
+			    android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:layout_marginLeft="5dp"
+	        	android:textSize="14sp"
+	        	android:textColor="#777"
+	        	android:text="打印机名称"/>
+		    <TextView android:id="@+id/item_setting_print_address"
+			    android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:layout_below="@id/item_setting_print_name"
+	        	android:layout_marginLeft="5dp"
+	        	android:textSize="12sp"
+	        	android:textColor="#777"
+	        	android:text="蓝牙地址"/>
+		    <TextView android:id="@+id/item_setting_print_default"
+			    android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:layout_marginLeft="5dp"
+	        	android:textSize="12sp"
+	        	android:textColor="#777"
+	        	android:layout_below="@id/item_setting_print_address"
+	        	android:text="黙认"/>
+		</RelativeLayout>
+		
+    </LinearLayout>
+
+</LinearLayout>

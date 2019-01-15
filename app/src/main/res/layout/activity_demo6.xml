@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="cn.zcbdqn.labelprinter.activity.PrintTemplateActivity">
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/title"
+        android:background="#16beea"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/template"
+        app:layout_constraintVertical_chainStyle="spread"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height">
+        <TextView
+            android:id="@+id/title_display"
+            android:text="编辑模板"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintVertical_bias="0.6"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/setting_print"
+            android:text="打印机"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            app:layout_constraintHorizontal_bias="0.96"
+            app:layout_constraintVertical_bias="0.6"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@drawable/item_selector"
+            android:layout_width="80dp"
+            android:layout_height="40dp" />
+        <Button
+            android:id="@+id/back"
+            android:text="&lt;"
+            android:textColor="#ffffff"
+            android:textSize="28sp"
+            app:layout_constraintHorizontal_bias="0.04"
+            app:layout_constraintVertical_bias="0.6"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@drawable/item_selector"
+            android:layout_width="80dp"
+            android:layout_height="40dp" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/template"
+        android:background="#fff"
+        app:layout_constraintBottom_toTopOf="@id/buttons"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+
+    </android.support.constraint.ConstraintLayout>
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/buttons"
+        app:layout_constraintBottom_toTopOf="@id/save_btn"
+        app:layout_constraintTop_toBottomOf="@id/template"
+        android:background="#fff"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/text_btn"
+            android:src="@mipmap/text_btn"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/barcode_btn"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            android:layout_marginBottom="5dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+        <ImageView
+            android:id="@+id/barcode_btn"
+            android:src="@mipmap/barcode_btn"
+            app:layout_constraintLeft_toRightOf="@id/text_btn"
+            app:layout_constraintRight_toLeftOf="@id/scale_b_btn"
+            android:layout_marginBottom="5dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+        <ImageView
+            android:id="@+id/scale_b_btn"
+            android:src="@mipmap/scale_b_btn"
+            app:layout_constraintLeft_toRightOf="@id/barcode_btn"
+            app:layout_constraintRight_toLeftOf="@id/scale_s_btn"
+            android:layout_marginBottom="5dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+        <ImageView
+            android:id="@+id/scale_s_btn"
+            android:src="@mipmap/scale_s_btn"
+            app:layout_constraintLeft_toRightOf="@id/scale_b_btn"
+            app:layout_constraintRight_toLeftOf="@id/single_btn"
+            android:layout_marginBottom="5dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+        <ImageView
+            android:id="@+id/single_btn"
+            android:src="@mipmap/single_btn"
+            app:layout_constraintLeft_toRightOf="@id/scale_s_btn"
+            app:layout_constraintRight_toLeftOf="@id/delete_btn"
+            android:layout_marginBottom="5dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+        <ImageView
+            android:id="@+id/delete_btn"
+            android:src="@mipmap/delete_btn"
+            app:layout_constraintLeft_toRightOf="@id/single_btn"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginBottom="5dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+    </android.support.constraint.ConstraintLayout>
+    <ImageView
+        android:id="@+id/save_btn"
+        android:src="@mipmap/save_btn"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/print_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/print_btn"
+        android:src="@mipmap/print_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/save_btn"
+        app:layout_constraintRight_toLeftOf="@id/preview_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/preview_btn"
+        android:src="@mipmap/preview_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/print_btn"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+</android.support.constraint.ConstraintLayout>

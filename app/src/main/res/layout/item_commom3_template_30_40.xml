@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/right_size_display"
+        android:text="40mm"
+        android:textSize="10sp"
+        android:background="@color/template_bg"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/template_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center"
+        android:layout_width="10dp"
+        android:layout_height="match_parent" />
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/template_parent"
+        android:background="@drawable/border_write"
+        android:padding="5dp"
+        android:layout_width="30mm"
+        android:layout_height="40mm">
+        <FrameLayout
+            android:id="@+id/goods_name_fl"
+            app:layout_constraintBottom_toTopOf="@id/goods_type_fl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/goods_name"
+                android:text="品名："
+                android:hint="请输入..."
+                android:layout_marginTop="20px"
+                android:layout_marginLeft="20px"
+                android:textColor="#000"
+                android:textSize="@dimen/template1_text_size"
+                android:background="#fff"
+                android:gravity="left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/goods_type_fl"
+            app:layout_constraintBottom_toTopOf="@id/goods_color_fl"
+            app:layout_constraintTop_toBottomOf="@id/goods_name_fl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/goods_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="20px"
+                android:background="#fff"
+                android:gravity="left"
+                android:hint="请输入..."
+                android:text="型号："
+                android:textColor="#000"
+                android:textSize="@dimen/template1_text_size" />
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/goods_color_fl"
+            app:layout_constraintBottom_toTopOf="@id/goods_style_fl"
+            app:layout_constraintTop_toBottomOf="@id/goods_type_fl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/goods_color"
+                android:text="颜色："
+                android:hint="请输入..."
+                android:textColor="#000"
+                android:textSize="@dimen/template1_text_size"
+                android:gravity="left"
+                android:layout_marginTop="20px"
+                android:layout_marginLeft="20px"
+                android:background="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/goods_style_fl"
+            app:layout_constraintBottom_toTopOf="@id/goods_price_fl"
+            app:layout_constraintTop_toBottomOf="@id/goods_color_fl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/goods_style"
+                android:text="款号："
+                android:hint="请输入..."
+                android:textColor="#000"
+                android:textSize="@dimen/template1_text_size"
+                android:gravity="left"
+                android:layout_marginTop="20px"
+                android:layout_marginLeft="20px"
+                android:background="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/goods_price_fl"
+            app:layout_constraintTop_toBottomOf="@id/goods_style_fl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/goods_price"
+                android:text="价格：￥"
+                android:hint="请输入..."
+                android:textColor="#000"
+                android:textSize="@dimen/template1_text_size"
+                android:gravity="left"
+                android:layout_marginTop="20px"
+                android:layout_marginLeft="20px"
+                android:background="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+        <View
+            android:background="#fff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="5px"/>
+        <View
+            android:background="#fff"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="5px"/>
+    </android.support.constraint.ConstraintLayout>
+    <TextView
+        android:text="30mm"
+        android:textSize="10sp"
+        android:background="@color/template_bg"
+        app:layout_constraintTop_toBottomOf="@id/template_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</android.support.constraint.ConstraintLayout>

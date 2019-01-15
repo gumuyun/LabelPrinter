@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">菁英标签打印</string>
+    <string name="default_trade_title_cn">黙认</string>
+    <string name="default_trade_title_en">default</string>
+</resources>

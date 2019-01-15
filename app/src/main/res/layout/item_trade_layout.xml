@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="84dp"
+    android:padding="10dp"
+    tools:context="cn.zcbdqn.labelprinter.activity.MainMenuActivity">
+
+    <!--主菜单行业自定义行布局-->
+    <ImageView
+        android:id="@+id/trade_icon"
+        android:src="@mipmap/default_home_64"
+        android:layout_width="64dp"
+        android:layout_height="64dp" />
+    <TextView
+        android:id="@+id/trade_title_cn"
+        android:text="常用模版"
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="10dp"
+        app:layout_constraintLeft_toRightOf="@id/trade_icon"/>
+    <TextView
+        android:id="@+id/trade_title_en"
+        android:text="Commonly used template"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toRightOf="@id/trade_icon"
+        app:layout_constraintTop_toBottomOf="@id/trade_title_cn"/>
+
+</android.support.constraint.ConstraintLayout>

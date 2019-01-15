@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="trade_images">
+        <item>@mipmap/default_home_64</item>
+        <item>@mipmap/clothing_64</item>
+        <!--<item>@mipmap/bigword</item>-->
+    </string-array>
+    <string-array name="trade_titles_cn">
+        <item>常用模板</item>
+        <item>服装</item>
+        <!--<item>超宽专用</item>-->
+    </string-array>
+    <string-array name="trade_titles_en">
+        <item>Commonly used template</item>
+        <item>Clothing</item>
+       <!-- <item>Big Template</item>-->
+    </string-array>
+</resources>

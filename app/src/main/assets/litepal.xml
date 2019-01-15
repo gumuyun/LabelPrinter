@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<litepal>
+    <!--数据库名-->
+    <dbname value="LabelPrinter"></dbname>
+    <!--版本-->
+    <version value="1"></version>
+    <list>
+        <!--映射-->
+        <mapping class="cn.zcbdqn.labelprinter.pojo.Template"></mapping>
+        <mapping class="cn.zcbdqn.labelprinter.pojo.TemplateEditView"></mapping>
+        <mapping class="cn.zcbdqn.labelprinter.pojo.User"></mapping>
+        <mapping class="cn.zcbdqn.labelprinter.pojo.Printer"></mapping>
+
+    </list>
+</litepal>

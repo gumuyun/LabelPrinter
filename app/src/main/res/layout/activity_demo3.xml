@@ -1,0 +1,28 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Demo3Activity"
+    android:orientation="vertical"
+    android:background="#eef" >
+    <FrameLayout
+        android:id="@+id/text_fl"
+        android:background="#ff0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@id/text_1"
+            android:text="全款："
+            android:textSize="50px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+    <EditText
+        android:id="@id/edit_text"
+        android:textSize="50px"
+        android:text="请输入..."
+        android:background="#eef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</FrameLayout>

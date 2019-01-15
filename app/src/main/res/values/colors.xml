@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="mainTonality">#16beea</color>
+    <color name="mainColorPrimaryDark">#16beea</color>
+    <color name="colorAccent3">#16beea</color>
+    <color name="colorAccent4">#b1e6f4</color>
+    <color name="listViewDefSp">#d8d8d8</color>
+    <color name="gray_e6">#e6e6e6</color>
+    <color name="transparent">#00000000</color>
+    <color name="item_pressed">#1bc4f1</color>
+    <color name="black">#000</color>
+    <color name="template_bg">#e8e8e8</color>
+</resources>

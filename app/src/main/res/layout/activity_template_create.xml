@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:padding="10.0dip">
+
+        <TextView
+            android:id="@+id/tvDevicesName"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="设备型号"
+            app:layout_constraintBottom_toBottomOf="@id/etDevicesName"
+            app:layout_constraintEnd_toStartOf="@id/guideline3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/etDevicesName" />
+
+        <Spinner
+            android:id="@+id/etDevicesName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/guideline3"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+
+        <TextView
+            android:id="@+id/tvLabelName"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="模版名称"
+            app:layout_constraintTop_toBottomOf="@id/etDevicesName"
+            app:layout_constraintBottom_toBottomOf="@id/etLabelName"
+            app:layout_constraintEnd_toStartOf="@id/guideline3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/etLabelName" />
+
+        <EditText
+            android:id="@+id/etLabelName"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:gravity="center_vertical"
+            android:hint="请输入模版名称"
+            android:padding="10.0dip"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/guideline3"
+            app:layout_constraintTop_toBottomOf="@id/etDevicesName" />
+
+        <TextView
+            android:id="@+id/tvLabelWidth"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="标签宽度"
+            app:layout_constraintBottom_toBottomOf="@id/etLabelWidth"
+            app:layout_constraintEnd_toStartOf="@id/guideline3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/etLabelWidth" />
+
+        <EditText
+            android:id="@+id/etLabelWidth"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:gravity="center_vertical"
+            android:hint="毫米"
+            android:inputType="number"
+            android:padding="10.0dip"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/guideline3"
+            app:layout_constraintTop_toBottomOf="@id/etLabelName" />
+
+        <TextView
+            android:id="@+id/tvLabelHeight"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="标签高度"
+            app:layout_constraintBottom_toBottomOf="@id/etLabelHeight"
+            app:layout_constraintEnd_toStartOf="@id/guideline3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/etLabelHeight" />
+
+        <EditText
+            android:id="@+id/etLabelHeight"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:gravity="center_vertical"
+            android:hint="毫米"
+            android:inputType="number"
+            android:padding="10.0dip"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/guideline3"
+            app:layout_constraintTop_toBottomOf="@id/etLabelWidth" />
+
+        <TextView
+            android:id="@+id/tvPaperType"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="纸张类型"
+            app:layout_constraintBottom_toBottomOf="@id/rgPaperType"
+            app:layout_constraintEnd_toStartOf="@id/guideline3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/rgPaperType" />
+
+        <RadioGroup
+            android:id="@+id/rgPaperType"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/guideline3"
+            app:layout_constraintTop_toBottomOf="@id/etLabelHeight">
+
+            <RadioButton
+                android:id="@+id/rbPaperType1"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:checked="true"
+                android:gravity="center"
+                android:paddingBottom="8.0dip"
+                android:paddingEnd="5.0dip"
+                android:paddingStart="5.0dip"
+                android:paddingTop="8.0dip"
+                android:text="间隙纸"
+                android:textSize="14.0sp" />
+
+            <!--<RadioButton
+                android:id="@id/rbPaperType2"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingBottom="8.0dip"
+                android:paddingEnd="5.0dip"
+                android:paddingStart="5.0dip"
+                android:paddingTop="8.0dip"
+                android:text="定孔纸"
+                android:textSize="14.0sp" />-->
+
+            <RadioButton
+                android:id="@+id/rbPaperType3"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:paddingBottom="8.0dip"
+                android:paddingEnd="5.0dip"
+                android:paddingStart="5.0dip"
+                android:paddingTop="8.0dip"
+                android:text="连续纸"
+                android:textSize="14.0sp" />
+
+            <!--<RadioButton
+                android:id="@id/rbPaperType4"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingBottom="8.0dip"
+                android:paddingEnd="5.0dip"
+                android:paddingStart="5.0dip"
+                android:paddingTop="8.0dip"
+                android:text="黑标纸"
+                android:textSize="14.0sp" />-->
+        </RadioGroup>
+
+       <!-- <TextView
+            android:id="@id/tvRotateAngle"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="旋转角度"
+            app:layout_constraintBottom_toBottomOf="@id/rgRotateAngle"
+            app:layout_constraintEnd_toStartOf="@id/guideline3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/rgRotateAngle" />
+
+        <RadioGroup
+            android:id="@id/rgRotateAngle"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/guideline3"
+            app:layout_constraintTop_toBottomOf="@id/rgPaperType">
+
+            <RadioButton
+                android:id="@id/rbRotateAngle0"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:paddingBottom="8.0dip"
+                android:paddingEnd="5.0dip"
+                android:paddingStart="5.0dip"
+                android:paddingTop="8.0dip"
+                android:text="0°"
+                android:textSize="14.0sp" />
+
+            <RadioButton
+                android:id="@id/rbRotateAngle90"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingBottom="8.0dip"
+                android:paddingEnd="5.0dip"
+                android:paddingStart="5.0dip"
+                android:paddingTop="8.0dip"
+                android:text="90°"
+                android:textSize="14.0sp" />
+
+            <RadioButton
+                android:id="@id/rbRotateAngle180"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingBottom="8.0dip"
+                android:paddingEnd="5.0dip"
+                android:paddingStart="5.0dip"
+                android:paddingTop="8.0dip"
+                android:text="180°"
+                android:textSize="14.0sp" />
+
+            <RadioButton
+                android:id="@id/rbRotateAngle270"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingBottom="8.0dip"
+                android:paddingEnd="5.0dip"
+                android:paddingStart="5.0dip"
+                android:paddingTop="8.0dip"
+                android:text="270°"
+                android:textSize="14.0sp" />
+        </RadioGroup>
+-->
+       <!-- <TextView
+            android:id="@id/tvTemplateBackground"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="背景模板"
+            app:layout_constraintBottom_toBottomOf="@id/swBackground"
+            app:layout_constraintEnd_toStartOf="@id/guideline3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/swBackground" />
+
+        <Switch
+            android:id="@id/swBackground"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            app:layout_constraintStart_toEndOf="@id/guideline3"
+            app:layout_constraintTop_toBottomOf="@id/rgRotateAngle" />
+
+        <ImageView
+            android:id="@id/ivBackground"
+            android:layout_width="0.0dip"
+            android:layout_height="80.0dip"
+            android:layout_marginTop="10.0dip"
+            android:src="@mipmap/ic_launcher"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/guideline3"
+            app:layout_constraintTop_toBottomOf="@id/swBackground" />
+
+        <TextView
+            android:id="@id/tvCableLabel"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="线缆标签"
+            app:layout_constraintBottom_toBottomOf="@id/swCableLabel"
+            app:layout_constraintEnd_toStartOf="@id/guideline3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/swCableLabel" />
+
+        <Switch
+            android:id="@id/swCableLabel"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            app:layout_constraintStart_toEndOf="@id/guideline3"
+            app:layout_constraintTop_toBottomOf="@id/ivBackground" />
+--><!--
+        <android.support.constraint.ConstraintLayout
+            android:id="@id/clTail"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvPaperType">
+
+            <android.support.constraint.Guideline
+                android:id="@id/guideline5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="113.0dip" />
+
+            <TextView
+                android:id="@id/tvTailOrientation"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="尾巴方向"
+                app:layout_constraintBottom_toBottomOf="@id/rgTailOrientation"
+                app:layout_constraintEnd_toStartOf="@id/guideline5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/rgTailOrientation" />
+
+            <RadioGroup
+                android:id="@id/rgTailOrientation"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/guideline5">
+
+                <RadioButton
+                    android:id="@id/rbTailOrientationUp"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingBottom="8.0dip"
+                    android:paddingEnd="5.0dip"
+                    android:paddingStart="5.0dip"
+                    android:paddingTop="8.0dip"
+                    android:text="上"
+                    android:textSize="14.0sp" />
+
+                <RadioButton
+                    android:id="@id/rbTailOrientationDown"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingBottom="8.0dip"
+                    android:paddingEnd="5.0dip"
+                    android:paddingStart="5.0dip"
+                    android:paddingTop="8.0dip"
+                    android:text="下"
+                    android:textSize="14.0sp" />
+
+                <RadioButton
+                    android:id="@id/rbTailOrientationLeft"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingBottom="8.0dip"
+                    android:paddingEnd="5.0dip"
+                    android:paddingStart="5.0dip"
+                    android:paddingTop="8.0dip"
+                    android:text="左"
+                    android:textSize="14.0sp" />
+
+                <RadioButton
+                    android:id="@id/rbTailOrientationRight"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingBottom="8.0dip"
+                    android:paddingEnd="5.0dip"
+                    android:paddingStart="5.0dip"
+                    android:paddingTop="8.0dip"
+                    android:text="右"
+                    android:textSize="14.0sp" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@id/tvTailLength"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:text="尾巴长度"
+                app:layout_constraintBottom_toBottomOf="@id/etTailLength"
+                app:layout_constraintEnd_toStartOf="@id/guideline5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/etTailLength" />
+
+            <com.project.skn.x.view.CurrentEditText
+                android:id="@id/etTailLength"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/shape_edit_layout"
+                android:gravity="center_vertical"
+                android:hint="毫米"
+                android:inputType="number"
+                android:padding="10.0dip"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/guideline5"
+                app:layout_constraintTop_toBottomOf="@id/rgTailOrientation" />
+        </android.support.constraint.ConstraintLayout>
+-->
+        <Button
+            android:id="@+id/tvCancel"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15.0dip"
+            android:layout_marginStart="15.0dip"
+            android:layout_marginTop="20.0dip"
+            android:gravity="center"
+            android:paddingBottom="15.0dip"
+            android:paddingTop="15.0dip"
+            android:text="取消"
+            app:layout_constraintEnd_toStartOf="@id/guideline2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvPaperType" />
+
+        <Button
+            android:id="@+id/tvCreate"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15.0dip"
+            android:layout_marginStart="15.0dip"
+            android:gravity="center"
+            android:paddingBottom="15.0dip"
+            android:paddingTop="15.0dip"
+            android:text="新建"
+            app:layout_constraintBottom_toBottomOf="@id/tvCancel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/guideline2"
+            app:layout_constraintTop_toTopOf="@id/tvCancel" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="113.0dip" />
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

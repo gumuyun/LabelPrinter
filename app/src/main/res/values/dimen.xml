@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="template10mm">10mm</dimen>
+    <dimen name="template9mm">9mm</dimen>
+    <dimen name="template8mm">8mm</dimen>
+    <dimen name="template7mm">7mm</dimen>
+    <dimen name="template6mm">6mm</dimen>
+    <dimen name="template5mm">5mm</dimen>
+    <dimen name="template4mm">4mm</dimen>
+    <dimen name="template3mm">3mm</dimen>
+    <dimen name="template2mm">2mm</dimen>
+    <dimen name="template1mm">1mm</dimen>
+    <dimen name="template0mm">0mm</dimen>
+
+    <dimen name="px10">10px</dimen>
+    <dimen name="px11">11px</dimen>
+    <dimen name="px12">12px</dimen>
+    <dimen name="px13">13px</dimen>
+    <dimen name="px14">14px</dimen>
+    <dimen name="px15">15px</dimen>
+    <dimen name="px16">16px</dimen>
+    <dimen name="px17">17px</dimen>
+    <dimen name="px18">18px</dimen>
+    <dimen name="px19">19px</dimen>
+    <dimen name="px20">20px</dimen>
+    <dimen name="px21">21px</dimen>
+    <dimen name="px22">22px</dimen>
+    <dimen name="px23">23px</dimen>
+    <dimen name="px24">24px</dimen>
+    <dimen name="px25">25px</dimen>
+    <dimen name="px26">26px</dimen>
+    <dimen name="template1_text_size">64px</dimen>
+
+    <dimen name="title_height">60dp</dimen>
+</resources>
